@@ -1,0 +1,16 @@
+google:
+  client:
+    clientId: 541555327940-in06jhn0n4pu9vrfn42aubbcuoppbsih.apps.googleusercontent.com
+    clientSecret: Ny_qKOsXUBT5jCDAgQKvTQby
+    accessTokenUri: https://accounts.google.com/o/oauth2/token
+    scope: email, profile
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v2/userinfo
+
+kakao:
+  client:
+    clientId: 9b7e730a78399b4f6d1af01ddd236ff9
+    accessTokenUri: https://kauth.kakao.com/oauth/token
+    userAuthorizationUri: https://kauth.kakao.com/oauth/authorize
+  resource:
+    userInfoUri: https://kapi.kakao.com/v1/user/me
