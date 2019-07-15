@@ -46,6 +46,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
             .authorizeRequests()
                 .antMatchers("/", "/login/**", "/css/**", "/images/**", "/js/**", "/console/**").permitAll()
+                .antMatchers("/google").hasAuthority(GOOGLE.getRoleType())
+                .antMatchers("/kakao").hasAuthority(KAKAO.getRoleType())
                 .anyRequest().authenticated()
             .and()
                 .headers().frameOptions().disable()
