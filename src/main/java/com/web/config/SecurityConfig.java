@@ -82,7 +82,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
                 .logout()
                 .logoutUrl("/logout")
-                .logoutSuccessUrl("/")
+                .logoutSuccessUrl("/login")
                 .deleteCookies("JSESSIONID")
                 .invalidateHttpSession(true)
             .and()
@@ -168,7 +168,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public ClientResources kakao() {
         return new ClientResources();
     }*/
-
-
 
 }
