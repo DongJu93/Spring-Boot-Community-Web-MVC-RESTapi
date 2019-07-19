@@ -3,6 +3,6 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
-rootProject.name = 'Spring-Boot-Community-Web-MVC-RESTapi'
+rootProject.name = 'Spring-Boot-Community-Web-RESTapi'
 
 
